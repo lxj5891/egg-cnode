@@ -14,8 +14,8 @@ services:
     image: mongo:3.2
     restart: always
     environment:      
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=mongodb
+      # - MONGO_INITDB_ROOT_USERNAME=root
+      # - MONGO_INITDB_ROOT_PASSWORD=mongodb
       - MONGO_INITDB_DATABASE=egg_cnode
     volumes:
       - egg-mongo:/data/db

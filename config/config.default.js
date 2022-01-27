@@ -8,9 +8,9 @@ module.exports = appInfo => {
 
   config.description = 'CNode：Node.js专业中文社区';
 
-  config.site_logo = '/public/images/cnodejs_light.svg';
+  config.site_logo = 'https://img.ljcdn.com/beike/ke-cloud/1624342180706.png';
 
-  config.site_icon = '/public/images/cnode_icon_32.png';
+  config.site_icon = 'http://cloud.intra.ke.com/public/favicon.ico';
 
   // debug 为 true 时，用于本地调试
   config.debug = true;
@@ -95,6 +95,7 @@ module.exports = appInfo => {
   config.auth_cookie_name = 'node_club';
   config.admins = {
     ADMIN_USER: true,
+    'admin': true,
   };
 
   config.siteFile = {
@@ -145,11 +146,11 @@ module.exports = appInfo => {
     ignoreTLS: true,
   };
 
-  config.alinode = {
-    // 从 `Node.js 性能平台` 获取对应的接入参数
-    appid: process.env.EGG_ALINODE_APPID || '',
-    secret: process.env.EGG_ALINODE_SECRET || '',
-  };
+  // config.alinode = {
+  //   // 从 `Node.js 性能平台` 获取对应的接入参数
+  //   appid: process.env.EGG_ALINODE_APPID || '',
+  //   secret: process.env.EGG_ALINODE_SECRET || '',
+  // };
 
   config.topic = {
     perDayPerUserLimitCount: 10,

@@ -13,7 +13,7 @@ class PageController extends Controller {
   }
 
   async getstart() {
-    await this.ctx.render('static/getstart', { pageTitle: 'Node.js 新手入门' });
+    await this.ctx.render('static/getstart', { pageTitle: '客制化 新手入门' });
   }
 
   async robots() {
