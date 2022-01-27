@@ -83,3 +83,6 @@ $ npm stop
 - [Develop / Deploy with Docker](tutorials/Docker.md)
 
 [egg]: https://eggjs.org
+
+
+docker build -t keyboard:v1 .
