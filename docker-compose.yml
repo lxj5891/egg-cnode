@@ -1,5 +1,5 @@
 version: '3'
-services: 
+services:
   cnode:
     # build:
     #   context: .
@@ -14,7 +14,7 @@ services:
       - EGG_REDIS_HOST=redis
       - EGG_REDIS_PORT=6379
       - EGG_REDIS_PASSWORD=egg_cnode
-      - EGG_MONGODB_URL=mongodb://egg_cnode:egg_cnode@mongodb:27017/egg_cnode
+      - EGG_MONGODB_URL=mongodb://mongodb:27017/egg_cnode
       - EGG_MINI_ASSETS=true
       - EGG_PASSPORT_GITHUB_CLIENT_ID=test
       - EGG_PASSPORT_GITHUB_CLIENT_SECRET=test
@@ -42,9 +42,9 @@ services:
   mongodb:
     image: mongo:3.2
     restart: always
-    environment:      
-      - MONGO_INITDB_ROOT_USERNAME=egg_cnode
-      - MONGO_INITDB_ROOT_PASSWORD=egg_cnode
+    environment:
+      # - MONGO_INITDB_ROOT_USERNAME=egg_cnode
+      # - MONGO_INITDB_ROOT_PASSWORD=egg_cnode
       - MONGO_INITDB_DATABASE=egg_cnode
     volumes:
       - egg-mongo:/data/db
@@ -60,4 +60,4 @@ volumes:
 
 networks:
   docker_cnode:
-    driver: bridge    
+    driver: bridge
