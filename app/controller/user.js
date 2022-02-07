@@ -196,7 +196,7 @@ class UserController extends Controller {
         loginname: data.loginname,
         email: data.email,
         url: data.url,
-        avatar: data.avatar,
+        // avatar: data.avatar,
         location: data.location,
         signature: data.signature,
         weibo: data.weibo,
@@ -216,18 +216,16 @@ class UserController extends Controller {
     const { body } = ctx.request;
     const action = body.action;
     if (action === 'change_setting') {
-      const url = validator.trim(body.url);
-      const location = validator.trim(body.location);
-      const weibo = validator.trim(body.weibo);
+      // const url = validator.trim(body.url);
+      // const location = validator.trim(body.location);
+      // const weibo = validator.trim(body.weibo);
       const signature = validator.trim(body.signature);
       const avatar = validator.trim(body.avatar);
 
       const user = await service.user.getUserById(ctx.user._id);
-      user.url = url;
+      // user.url = url;
       user.avatar = avatar;
-      user.location = location;
       user.signature = signature;
-      user.weibo = weibo;
       await user.save();
       return ctx.redirect('/setting?save=success');
     }
