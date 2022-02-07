@@ -18,6 +18,9 @@
 
 ## QuickStart
 
+
+docker build -t keyboard:v1 .
+docker-compose up -d
 <!-- add docs here for user -->
 
 see [egg docs][egg] for more detail.
