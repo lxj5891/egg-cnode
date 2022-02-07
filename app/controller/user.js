@@ -196,6 +196,7 @@ class UserController extends Controller {
         loginname: data.loginname,
         email: data.email,
         url: data.url,
+        avatar: data.avatar,
         location: data.location,
         signature: data.signature,
         weibo: data.weibo,
@@ -219,9 +220,11 @@ class UserController extends Controller {
       const location = validator.trim(body.location);
       const weibo = validator.trim(body.weibo);
       const signature = validator.trim(body.signature);
+      const avatar = validator.trim(body.avatar);
 
       const user = await service.user.getUserById(ctx.user._id);
       user.url = url;
+      user.avatar = avatar;
       user.location = location;
       user.signature = signature;
       user.weibo = weibo;
