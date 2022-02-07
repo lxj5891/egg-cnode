@@ -4,9 +4,9 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = 'CNode技术社区';
+  config.name = '贝壳客制化，开源技术社区';
 
-  config.description = 'CNode：Node.js专业中文社区';
+  config.description = '贝壳客制化，开源技术社区';
 
   config.site_logo = 'https://img.ljcdn.com/beike/ke-cloud/1624342180706.png';
 

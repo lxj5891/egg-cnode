@@ -131,7 +131,9 @@ class UserService extends Service {
     user.pass = pass;
     user.email = email;
     user.avatar = avatar_url;
-    user.active = active || false;
+    // user.active = active || false;
+    
+    user.active = true;
     user.accessToken = uuid.v4();
 
     return user.save();
