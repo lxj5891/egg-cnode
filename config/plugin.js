@@ -33,11 +33,11 @@ exports.passportLocal = {
   package: 'egg-passport-local',
 };
 
-exports.alinode = {
-  enable: true,
-  package: 'egg-alinode',
-  env: [ 'prod' ],
-};
+// exports.alinode = {
+//   enable: true,
+//   package: 'egg-alinode',
+//   env: [ 'prod' ],
+// };
 
 exports.validate = {
   enable: true,
