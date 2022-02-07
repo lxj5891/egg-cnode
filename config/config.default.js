@@ -4,13 +4,13 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  config.name = '贝壳客制化，开源技术社区';
+  config.name = '开源技术社区';
 
   config.description = '贝壳客制化，开源技术社区';
 
-  config.site_logo = 'https://img.ljcdn.com/beike/ke-cloud/1624342180706.png';
+  config.site_logo = '';
 
-  config.site_icon = 'http://cloud.intra.ke.com/public/favicon.ico';
+  config.site_icon = '';
 
   // debug 为 true 时，用于本地调试
   config.debug = true;
@@ -18,7 +18,7 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1519887194138_3450';
 
-  config.host = 'http://cnodejs.org';
+  config.host = 'http://keboard.ke.com';
 
   config.session_secret = 'node_club_secret'; // 务必修改
 
