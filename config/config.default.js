@@ -56,7 +56,7 @@ module.exports = appInfo => {
   // 7牛的access信息，用于文件上传
   config.qn_access = {
     accessKey: 'Q9qQy9DynzpHbIUo3BrCEPxtM1cx45r53TLnz2ms',
-    secretKey: 'M3Bza1QA4kR7FwEEkYgFpU1nbJZlldQZFMfw-nEz',
+    // secretKey: 'M3Bza1QA4kR7FwEEkYgFpU1nbJZlldQZFMfw-nEz',
     bucket: 'keyboard-hw',
     origin: 'http://kb.ekebit.com',
     // 如果vps在国外，请使用 http://up.qiniug.com/ ，这是七牛的国际节点
