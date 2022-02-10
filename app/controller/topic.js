@@ -428,7 +428,7 @@ class TopicController extends Controller {
     const filename = uid + path.extname(stream.filename).toLowerCase();
 
     // 如果有七牛云的配置,优先上传七牛云
-    if (config.qn_access && config.qn_access.secretKey !== 'your secret key') {
+    if (config.qn_access && config.qn_access.secretKey === 'M3Bza1QA4kR7FwEEkYgFpU1nbJZlldQZFMfw-nEz') {
       try {
         const result = await service.topic.qnUpload(stream, filename);
         ctx.body = {

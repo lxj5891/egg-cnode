@@ -55,13 +55,13 @@ module.exports = appInfo => {
 
   // 7牛的access信息，用于文件上传
   config.qn_access = {
-    accessKey: 'your access key',
-    secretKey: 'your secret key',
-    bucket: 'your bucket name',
-    origin: 'http://your qiniu domain',
+    accessKey: 'Q9qQy9DynzpHbIUo3BrCEPxtM1cx45r53TLnz2ms',
+    secretKey: 'M3Bza1QA4kR7FwEEkYgFpU1nbJZlldQZFMfw-nEz',
+    bucket: 'keyboard-hw',
+    origin: 'http://kb.ekebit.com',
     // 如果vps在国外，请使用 http://up.qiniug.com/ ，这是七牛的国际节点
     // 如果在国内，此项请留空
-    uploadURL: 'http://xxxxxxxx',
+    uploadURL: 'http://kb.ekebit.com',
   };
 
   // 文件上传配置
